@@ -1,0 +1,7 @@
+Rows: 48842
+Columns: 15
+Column names: ['age', 'workclass', 'fnlwgt', 'education', 'education-num', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country', 'class']
+
+Validation findings:
+- Duplicate feature rows (including repeated occurrences): 111
+- Duplicate feature groups with conflicting labels: 5

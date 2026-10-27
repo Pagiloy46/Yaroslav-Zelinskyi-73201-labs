@@ -1,0 +1,7 @@
+Dataset: UCI Adult via OpenML
+Name: adult
+Version: 2
+Rows: 48842
+Feature columns: 14
+Columns including target: 15
+Target column: class

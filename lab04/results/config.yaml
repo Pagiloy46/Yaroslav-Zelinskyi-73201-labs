@@ -1,0 +1,39 @@
+dataset:
+  name: UCI Adult
+  source: OpenML
+  openml_name: adult
+  version: 2
+  raw_rows: 48842
+  raw_columns_including_target: 15
+reproducibility:
+  random_seed: 42
+  python_split: train_test_split
+  test_size: 0.3
+  stratify: true
+missing_values:
+  marker: '?'
+  numeric_imputation: median
+  categorical_imputation: most_frequent
+outliers:
+  method: quantile clipping
+  lower_quantile: 0.01
+  upper_quantile: 0.99
+  fit_on: training data only
+numeric_preprocessing:
+  scaling: StandardScaler
+categorical_preprocessing:
+  encoding: OneHotEncoder
+  handle_unknown: ignore
+derived_features:
+- capital_net = capital-gain - capital-loss
+- hours_per_age = hours-per-week / (age - 16)
+model:
+  name: LogisticRegression
+  solver: lbfgs
+  max_iter: 5000
+  random_state: 42
+processed_data:
+  file: processed_train.csv
+  rows: 34189
+  columns_including_target: 108
+  sha256: 6d4de6e49ec2f40efc1e7dbc95bd5a314e6890c57781b4ec61b86aea563dd8d3

@@ -1,0 +1,3 @@
+variant,accuracy,f1
+without_derived_features,0.8538865761277554,0.6601047785362756
+with_derived_features,0.8579130553470279,0.6700475435816164

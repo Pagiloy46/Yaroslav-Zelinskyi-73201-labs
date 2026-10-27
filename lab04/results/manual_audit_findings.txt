@@ -1,0 +1,9 @@
+Dataset rows: 48842
+Sampled rows for manual review: 50
+Conflicting feature groups: 5
+Rows involved in conflicting groups: 10
+
+Automated checks:
+- No range or target-label violations found.
+
+Manual review is required for manual_review_50.csv.

@@ -1,0 +1,18 @@
+{
+  "file": "processed_train.csv",
+  "rows": 34189,
+  "columns_including_target": 108,
+  "sha256": "6d4de6e49ec2f40efc1e7dbc95bd5a314e6890c57781b4ec61b86aea563dd8d3",
+  "metrics": [
+    {
+      "variant": "without_derived_features",
+      "accuracy": 0.8538865761277554,
+      "f1": 0.6601047785362756
+    },
+    {
+      "variant": "with_derived_features",
+      "accuracy": 0.8579130553470279,
+      "f1": 0.6700475435816164
+    }
+  ]
+}
