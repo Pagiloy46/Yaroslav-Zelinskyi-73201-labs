@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Desktop/Lab1/lab06/src/mlruns/533177086546358141/cd2de1699832485c9b9d472092a10526/artifacts
+end_time: 1794336022660
+entry_point_name: ''
+experiment_id: '533177086546358141'
+lifecycle_stage: active
+run_id: cd2de1699832485c9b9d472092a10526
+run_name: CNN_training_pipeline
+run_uuid: cd2de1699832485c9b9d472092a10526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794335454373
+status: 3
+tags: []
+user_id: User

@@ -1,0 +1,39 @@
+
+project:
+  name: "Lab 6 Training Pipeline"
+  seed: 42
+  device: "auto"
+
+
+data:
+  name: "FashionMNIST"
+  root: "data"
+  batch_size: 128
+  num_workers: 2
+  train_size: 55000
+  val_size: 5000
+
+
+model:
+  name: "CNN"
+  num_classes: 10
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  optimizer: "Adam"
+  scheduler: "StepLR"
+  step_size: 5
+  gamma: 0.5
+  checkpoint_dir: "lab06/results/checkpoints"
+
+logging:
+  mlflow_experiment: "Lab06_FashionMNIST"
+  tracking_uri: "file:./mlruns"
+
+profiling:
+  enabled: true
+  wait: 0
+  warmup: 1
+  active: 3
+  repeat: 1
