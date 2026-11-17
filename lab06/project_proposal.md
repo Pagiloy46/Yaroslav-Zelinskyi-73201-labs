@@ -1,67 +1,38 @@
 # Individual Project Proposal
 
-## Project Title
-**Lightweight Fashion Image Classification for Edge Devices**
+**Project Title:** Car Make and Model Recognition Using Deep Learning
 
-## 1. Problem Statement
+### 1. Problem
 
-The goal of this project is to develop a small and efficient neural network that can classify clothing images. The model should work on devices with limited computing resources, such as laptops and mobile devices.
+The goal of this project is to develop a deep learning model that can recognize a car's manufacturer and specific model from an image. The system will help automatically identify vehicles using computer vision.
 
-## 2. Dataset
+### 2. Dataset
 
-The project will use the Fashion-MNIST dataset.
+The project will use the CompCars dataset. It contains images of different car manufacturers and models, with additional information about vehicle viewpoints and characteristics.
 
-It contains 70,000 grayscale images divided into 10 clothing categories. Each image has a resolution of 28 × 28 pixels.
+A subset of approximately 100 car models will be selected for the initial experiment to make training and evaluation feasible.
 
-The dataset contains 60,000 training images and 10,000 test images.
-
-## 3. Proposed Model
-
-A lightweight Convolutional Neural Network (CNN) will be used.
-
-The model will contain:
-- Two convolutional layers.
-- ReLU activation functions.
-- Max pooling layers.
-- A fully connected output layer with 10 classes.
-
-The model will be based on the CNN architecture used in previous laboratory work.
-
-## 4. Performance Requirements
-
-The project must satisfy the following constraints:
-
-| Metric | Requirement |
-|---|---:|
-| Inference latency | ≤ 50 ms |
-| Model size | ≤ 5 MB |
-| Number of classes | 10 |
-
-These requirements will help ensure that the model is suitable for resource-limited devices.
-
-## 5. Optimization Strategy
-
-Several optimization techniques will be investigated:
-
-- Model quantization to reduce model size.
-- Efficient preprocessing of input images.
-- Batch size optimization.
-- Removal of unnecessary model complexity.
-- Inference benchmarking on CPU.
-
-The final model will be evaluated using accuracy, inference latency, and storage size.
-
-## 6. Expected Results
-
-The expected result is a compact image classification model that satisfies the latency and storage requirements while maintaining good classification accuracy.
-
-The project will demonstrate how machine learning models can be optimized for practical deployment on devices with limited resources.
-
-## 7. Evaluation
+### 3. Success Metrics
 
 The model will be evaluated using:
-- Test accuracy.
-- Inference latency in milliseconds.
-- Model size in megabytes.
+- Top-1 classification accuracy.
+- Top-5 classification accuracy.
+- Inference latency.
+- Model size.
 
-The final objective is to achieve a balance between prediction quality, speed, and model size.
+The target is to achieve at least 70% Top-1 accuracy and 90% Top-5 accuracy on the selected classes.
+
+### 4. Deployment Constraints
+
+The trained model must satisfy the following requirements:
+- Inference latency: ≤ 50 ms per image.
+- Model size: ≤ 5 MB.
+- CPU inference should be supported.
+
+### 5. Planned Optimization
+
+MobileNetV3-Small will be used as the main architecture. INT8 quantization will be applied to reduce model size and improve inference speed. The optimized model will be compared with the original model in terms of accuracy, latency, and size.
+
+### 6. Expected Result
+
+The expected result is a lightweight image classification system capable of recognizing different car manufacturers and models while satisfying the deployment constraints.
