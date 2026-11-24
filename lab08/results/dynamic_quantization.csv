@@ -1,0 +1,3 @@
+model,backend,accuracy,size_mb,latency_ms
+Baseline FP32,none,65.41,4.805355072021484,4.288331000134349
+Dynamic INT8,fbgemm,65.25,2.2645816802978516,4.717235999996774

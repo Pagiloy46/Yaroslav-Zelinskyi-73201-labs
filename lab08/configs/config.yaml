@@ -1,0 +1,25 @@
+
+project:
+  name: "Lab 8 - Quantization and Export"
+  seed: 42
+  device: "cpu"
+
+data:
+  name: "FashionMNIST"
+  root: "data"
+  batch_size: 128
+  calibration_samples: 500
+  num_workers: 0
+
+quantization:
+  weight_bits: [8, 4, 2]
+  per_channel: true
+  backend: "fbgemm"
+
+onnx:
+  opset_version: 18
+  tolerance: 0.0001
+
+benchmark:
+  warmup_iterations: 20
+  measured_iterations: 100

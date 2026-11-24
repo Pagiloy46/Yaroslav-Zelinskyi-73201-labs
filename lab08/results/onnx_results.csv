@@ -1,0 +1,2 @@
+pytorch_latency_ms,onnx_latency_ms,onnx_size_mb,max_error,tolerance,agreement
+4.615535999764688,0.8513729996047914,4.803908348083496,9.5367431640625e-07,0.0001,True

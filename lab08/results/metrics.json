@@ -1,0 +1,36 @@
+
+{
+  "project": "Fashion-MNIST Image Classification",
+  "dataset": "Fashion-MNIST",
+  "random_seed": 42,
+  "model": "BaselineCNN",
+  "framework": "PyTorch",
+  "baseline": {
+    "accuracy": 65.41,
+    "model_size_mb": 4.805,
+    "inference_latency_ms": 4.288
+  },
+  "dynamic_quantization": {
+    "backend": "fbgemm",
+    "accuracy": 65.25,
+    "model_size_mb": 2.265,
+    "inference_latency_ms": 4.717
+  },
+  "static_quantization": {
+    "backend": "fbgemm",
+    "calibration_samples": 500,
+    "accuracy": 66.15,
+    "model_size_mb": 1.226,
+    "inference_latency_ms": 2.788
+  },
+  "onnx": {
+    "runtime": "ONNX Runtime",
+    "version": "1.18.0",
+    "model_size_mb": 4.804,
+    "pytorch_latency_ms": 4.6155,
+    "onnx_latency_ms": 0.8514,
+    "maximum_numerical_error": 0.0000009537,
+    "tolerance": 0.0001,
+    "outputs_match": true
+  }
+}

@@ -1,0 +1,8 @@
+model,accuracy,size_mb,latency_ms,status
+Baseline FP32,65.41,4.81,4.29,Measured
+Pruned,N/A,N/A,N/A,Not measured
+Distilled,N/A,N/A,N/A,Not measured
+Dynamic INT8,65.25,2.26,4.72,Measured
+Static INT8,66.15,1.23,2.79,Measured
+Pruned + Quantized,N/A,N/A,N/A,Not measured
+Distilled + Quantized,N/A,N/A,N/A,Not measured
